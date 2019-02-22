@@ -1,0 +1,2 @@
+# bradley.dalina
+Personal Blog
