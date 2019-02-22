@@ -27,7 +27,6 @@
     margin: 8px auto;
     min-height: 0;
     border-radius:0;
-    background-color: #fff;
 }
 .web_title:before{content: "Bradley B. Dalina"}
 .web_number:before{content: "+639264482952"}
