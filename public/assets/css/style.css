@@ -2,24 +2,28 @@
 *
 *
 */
+
+a{color:#0098b1;}
+.navbar a
+{
+    color: #222;
+    text-decoration: none;
+    line-height: 32px;
+}
 .navbar a.pull-right
 {
-    line-height:32px;
-    text-decoration: none;
     border-left:solid 1px rgba(0,0,0,0.07);
     float: right;
-    font-size: 12px;
+    font-size: 14px;
     margin-left: 15px;
     padding-left: 15px;
-    color: #222;
 }
 
 .navbar a.float-left
 {
     font-size: 14px;
     font-weight:bold;
-    line-height: 32px;
-    color: #222;
+    text-transform: uppercase;
 }
 
 .navbar
@@ -31,3 +35,33 @@
 .web_title:before{content: "Bradley B. Dalina"}
 .web_number:before{content: "+639264482952"}
 .web_email:before{content: "bdalina54@gmail.com"}
+
+.jumbotron{background-color:#2bb2c7; color:#fff; margin-bottom:0;}
+
+section{padding:60px 0;}
+.feature-icon:hover{border-color:#d4ffe6;}
+.feature-icon
+{
+    display: inline-block;
+    margin-right: 25px;
+    width: 90px;
+    height: 90px;
+    border: solid 2px #0098b1;;
+    border-radius: 50%;
+    vertical-align: top;
+    text-align: center;
+    font-size: 25px;
+    line-height: 90px;
+}
+/* .feature-icon i {color: #fff;} */
+.feature-content {
+    display: inline-block;
+    margin-left: 0;
+    /* color:#fff; */
+}
+.feature-content a { text-decoration:none;}
+.feature-content a h2{font-size: 1.6rem; line-height:32px; font-weight:400; margin-top:0;padding-top:0;}
+
+
+footer{padding:20px 0; border-top:solid 1px #ddd; font-size:14px;;}
+footer p{line-height:32px; margin:0; padding:0;}
