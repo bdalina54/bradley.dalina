@@ -4,9 +4,16 @@
         <title>
             Bradley B. Dalina
         </title>
-        <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css" type="text/css">
-        <link rel="stylesheet" href="assets/css/plugins/font-awesome.min.css" type="text/css">
-        <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+
+        <link rel="preload" href="assets/css/plugins/bootstrap.min.css" as="style" type="text/css" onload="this.rel='stylesheet'">
+		<noscript><link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css" type="text/css"></noscript>
+
+        <link rel="preload" href="assets/css/plugins/font-awesome.min.css" as="style" type="text/css" onload="this.rel='stylesheet'">
+		<noscript><link rel="stylesheet" href="assets/css/plugins/font-awesome.min.css" type="text/css"></noscript>
+
+        <link rel="preload" href="assets/css/style.css" as="style" type="text/css" onload="this.rel='stylesheet'">
+		<noscript><link rel="stylesheet" href="assets/css/style.css" type="text/css"></noscript>
+
     </head>
     <body>
         <nav class="navbar nav-inverse bg-white">
