@@ -208,7 +208,7 @@ section.project-accomplishment h2
     margin-top: 0;
     padding-top: 0;
 }
-section.project-accomplishment ul.project-list{margin: 25px 0;}
+section.project-accomplishment ul.project-list{margin: 25px 0; text-align:left;}
 section.project-accomplishment ul.project-list li{line-height: 32px;}
 
 .card a.project-icon{text-decoration:none;display: block;padding: 35px 10px 15px 10px;margin: auto;}
