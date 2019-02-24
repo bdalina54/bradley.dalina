@@ -61,6 +61,8 @@ header > div.trans-header{padding: 30px 0;}
 header > div.trans-layer{padding: 80px 0;}
 header .lead {font-size: 1.15rem;}
 header .display-4 {font-size: 3rem;}
+@media (min-width: 468px){header .display-4 {font-size: 2rem;}}
+
 header h2{margin:0;}
 header h1{display:inline-block;}
 
