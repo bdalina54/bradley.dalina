@@ -191,6 +191,13 @@ section.project-services table tbody tr td:first-child{vertical-align: top;}
 
 .feature-content a:hover ~ .feature-icon{ border:solid 3px #fff; transition:.2s linear; box-shadow: 1px 0px 10px rgba(0,0,0,0.60);}
 
+
+section.project-accomplishment
+{
+
+}
+section.project-accomplishment a{text-decoration:none;}
+.carousel-caption{color:#000; vertical-align: top;}
 section.project-accomplishment h2
 {
     font-size: 1.6rem;
@@ -205,7 +212,7 @@ section.project-accomplishment ul.project-list li{line-height: 32px;}
 .card a.project-icon{text-decoration:none;display: block;padding: 35px 10px 15px 10px;margin: auto;}
 .card a.project-icon > i{font-size: 75px;}
 
-
+#myCanvas{width:100%;}
 
 
 
