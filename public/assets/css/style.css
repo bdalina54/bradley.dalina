@@ -36,13 +36,120 @@ a{color:#0098b1;}
 .web_number:before{content: "+639264482952"}
 .web_email:before{content: "bdalina54@gmail.com"}
 
-.jumbotron{
+
+/*
+-------------------------------------------
+Header, Banner, Profile Tag Css
+-------------------------------------------
+*/
+
+header
+{
     background-color: #1fc8db;
     background-image: linear-gradient(141deg, #44d4ea 0%, #1d99ad 51%, #1793a7 75%);
     color: white;
     opacity: 0.95;
     margin-bottom:0;
+    background-repeat: no-repeat; background-size:cover; background-position: 50% 70%; border-bottom:solid 1px #ddd;
 }
+header > div.trans-layer,header > div.trans-header{ display: flex;align-items: center;justify-content: center;}
+header > div.trans-header{padding: 30px 0;}
+header > div.trans-layer{padding: 80px 0;}
+header .lead {font-size: 1.15rem;}
+header .display-4 {font-size: 3rem;}
+header h2{margin:0;}
+header h1{display:inline-block;}
+
+header .profile-callout
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+header .profile-callout ul.grid
+{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+header .profile-callout ul.grid li
+{
+    float: left;
+    background-color: #000;
+    border-radius:50%;
+    overflow: hidden;
+    list-style: none;
+	max-width: 100%;
+}
+header figure
+{
+	border:solid 5px #fff;
+}
+.center-img{max-width:255px; margin-bottom:50px;}
+header figure
+{
+    position: relative;
+    overflow: hidden;
+	max-width: 100%;
+	height:auto;
+	border-radius:50%;
+	margin:0;
+}
+header figure img {
+    width: 100%;
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+header figure:hover img, header figure:focus img {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+header figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 25% 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(10, 10, 10, 0.34);
+    text-align: center;
+    font-size: 15px;
+    opacity: 0;
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+    border-radius:50%;
+	color: #fff;
+}
+
+header figcaption a:hover, header figcaption a:focus {color: #fff;}
+header figure:hover figcaption, header figure:focus figcaption {opacity: 1; color: #fff;}
+header figure.cs-hover figcaption {opacity: 1; color: #fff;}
+header figcaption .caption-content i {font-size: 35px;}
+header figcaption p {margin-bottom: 0;font-weight: 400;}
+header figcaption .caption-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -40px;
+    margin-left: -100px;
+    width: 200px;
+    -webkit-transform: translate(0px, 15px);
+    -ms-transform: translate(0px, 15px);
+    transform: translate(0px, 15px);
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+header figure:hover figcaption .caption-content, header figure:focus figcaption .caption-content
+{
+    -webkit-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
+}
+.page-header h2{word-break: break-all;box-sizing:border-box;word-wrap: break-word;}
 
 section{padding:60px 0;}
 .feature-icon:hover{border-color:#d4ffe6;}
