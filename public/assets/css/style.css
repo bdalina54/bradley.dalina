@@ -3,7 +3,9 @@
 *
 */
 
-a{color:#0098b1;}
+a, a:link{color: #0098b1;}
+a:visited{color: #228798;}
+a:hover{color: #228798;}
 .navbar a
 {
     color: #222;
@@ -36,7 +38,7 @@ a{color:#0098b1;}
 .web_number:after{content: "+639264482952"}
 .web_email:after{content: "bdalina54@gmail.com"}
 
-
+.no-margin{margin:0;}
 /*
 -------------------------------------------
 Header, Banner, Profile Tag Css
@@ -46,7 +48,7 @@ Header, Banner, Profile Tag Css
 header
 {
     background-color: #1fc8db;
-    background-image: linear-gradient(141deg, #abd2de 0%, #0fb1a2 51%, #09818c 75%);
+    background-image: linear-gradient(141deg, #abd2de 0%, #09818c 51%, #09818c 75%);
     color: white;
     opacity: 0.95;
     margin-bottom:0;
@@ -155,20 +157,27 @@ header figure:hover figcaption .caption-content, header figure:focus figcaption 
 
 section.project-services{background-color:#eff9fb; border-bottom: solid 1px #ddd;}
 section{padding:60px 15px;}
-section.project-services td{padding: 20px 0px;}
-.feature-icon:hover{border-color:#d4ffe6;}
+section.project-services div.row{margin: 10px 0px;}
+section.project-services table{margin: 15px 0px;}
+
+section.project-services table tbody tr td:first-child{vertical-align: top;}
+.feature-icon:hover{ border:solid 3px #fff; transition:.2s linear; box-shadow: 1px 0px 10px rgba(0,0,0,0.60);}
+.feature-icon a{color: #fff;}
 .feature-icon
 {
     display: inline-block;
     margin-right: 25px;
     width: 90px;
     height: 90px;
-    border: solid 2px #0098b1;;
+    background-color: #228798;
+    border: solid 3px #fff;
     border-radius: 50%;
     vertical-align: top;
     text-align: center;
     font-size: 25px;
     line-height: 90px;
+    transition:.5s linear;
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.60);
 }
 /* .feature-icon i {color: #fff;} */
 .feature-content {
@@ -179,6 +188,7 @@ section.project-services td{padding: 20px 0px;}
 .feature-content a { text-decoration:none;}
 .feature-content a h2{font-size: 1.6rem; line-height:32px; font-weight:400; margin-top:0;padding-top:0;}
 
+.feature-content a:hover ~ .feature-icon{ border:solid 3px #fff; transition:.2s linear; box-shadow: 1px 0px 10px rgba(0,0,0,0.60);}
 
 footer{padding:20px 15px; border-top:solid 1px #ddd; font-size:14px;;}
 footer p{line-height:32px; margin:0; padding:0;}
