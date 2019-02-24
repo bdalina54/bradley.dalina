@@ -151,7 +151,26 @@
       <script type="text/javascript" language="javascript" src="assets/js/popper.min.js" defer></script>
       <script type="text/javascript" language="javascript" src="assets/js/bootstrap.min.js" defer></script>
       <script type="text/javascript" language="javascript">
-                XMLHttpRequest.setRequestHeader("X-Frame-Options", "SAMEORIGIN");
+              if(window.XMLHttpRequest)
+                 {
+                 xmlhttp = new XMLHttpRequest();
+                }
+                else
+                {
+                 xmlhttp = new ActiveXObject('Microsoft.XMLHTTP');
+                };
+
+             /*xmlhttp.onreadystatechange = function(){
+                 if(xmlhttp.readyState == 4 && xmlhttp.status == 200){
+                     document.getElementById('message').innerHTML = xmlhttp.responseText;
+                 };
+             };
+
+             parameters = 'insert_text='+document.getElementById('insert_text').value;*/
+
+             //xmlhttp.open('POST','ajax_posting_data.php',true);
+             xmlhttp.setRequestHeader("X-Frame-Options", "SAMEORIGIN");
+             //xmlhttp.send(parameters);
       </script>
     </body>
 </html>
