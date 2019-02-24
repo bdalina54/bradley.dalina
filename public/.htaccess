@@ -101,11 +101,11 @@ RewriteCond %{HTTP_REFERER} !^$
 <IfModule mod_headers.c>
 	Header always set X-Content-Type-Options "nosniff"
 	Header always set X-XSS-Protection "1; mode=block"
-	Header always set X-FRAME-OPTIONS "DENY"
+	Header always set X-FRAME-OPTIONS "SAMEORIGIN"
 	Header set Access-Control-Allow-Origin "*"
 
 	#Header set X-Content-Type-Options "nosniff"
-	#Header set X-Frame-Options DENY
+	#Header set X-Frame-Options SAMEORIGIN
 	#Header set Cache-Control "max-age=2628000, public"
 	#Header set Access-Control-Allow-Origin "*"
 	Header set Access-Control-Allow-Methods "POST, GET, OPTIONS"

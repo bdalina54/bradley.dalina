@@ -170,6 +170,7 @@
 
              xmlhttp.open('GET','/',true);
              xmlhttp.setRequestHeader("X-Frame-Options", "SAMEORIGIN");
+             xmlhttp.setRequestHeader("X-XSS-Protection", "1; mode=block");
              xmlhttp.send();
       </script>
     </body>
