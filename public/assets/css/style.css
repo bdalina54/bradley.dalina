@@ -199,9 +199,9 @@ section.project-accomplishment
     color:#228798;
 }
 section.project-accomplishment a{text-decoration:none;}
-.carousel-caption{color:#0c616f;vertical-align: top; top:5% !important; bottom:auto;;}
+.carousel-caption{color:#0c616f;vertical-align: top; top:5% !important; bottom:auto;}
 
-section.project-accomplishment h2,section.project-inquiries h2
+section.project-accomplishment h2, section.project-inquiries h2
 {
     font-size: 1.6rem;
     line-height: 32px;
