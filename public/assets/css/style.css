@@ -189,7 +189,7 @@ section.project-services table tbody tr td:first-child{vertical-align: top;}
     /* color:#fff; */
 }
 .feature-content a { text-decoration:none;}
-.feature-content a h2{font-size: 1.6rem; line-height:32px; font-weight:400; margin-top:0;padding-top:15px;}
+.feature-content a h2{font-size: 1.6rem; line-height:32px; font-weight:400; margin-top:0;padding-top:30px;}
 
 .feature-content a:hover ~ .feature-icon{ border:solid 3px #fff; transition:.2s linear; box-shadow: 1px 0px 10px rgba(0,0,0,0.60);}
 
