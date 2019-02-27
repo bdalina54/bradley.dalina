@@ -232,7 +232,7 @@ section.project-inquiries ul.menu{border-top:solid 1px rgba(255, 254, 254, 0.25)
 section.project-inquiries ul.menu li{ font-size: 15px; line-height:30px; padding-right:15px; padding-top:15px; padding-bottom:15px;  display:inline-block;}
 section.project-inquiries ul.sub-menu{ display:none;}
 
-section.project-inquiries ol{border-top:solid 1px rgba(255, 254, 254, 0.25); margin-bottom:0; margin:0;}
+section.project-inquiries ol{border-top:solid 1px rgba(255, 254, 254, 0.25); margin-bottom:0; margin:0; padding:0;}
 section.project-inquiries li{ font-size: 15px; line-height:30px; padding-right:6px; padding-top:15px; padding-bottom:0px;  display:inline-block;}
 section.project-inquiries ol li a i{width:15px; height:15px; text-align:center;}
 
