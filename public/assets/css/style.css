@@ -200,7 +200,7 @@ section.project-accomplishment
 }
 section.project-accomplishment a{text-decoration:none;}
 .carousel-caption{color:#0c616f;vertical-align: top;}
-section.project-accomplishment h2
+section.project-accomplishment h2, section.project-inquiries h2
 {
     font-size: 1.6rem;
     line-height: 32px;
