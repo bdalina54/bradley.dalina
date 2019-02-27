@@ -217,7 +217,7 @@ section.project-accomplishment ul.project-list li{line-height: 32px;}
 #myCanvas{width:100%;}
 section.project-inquiries{
     background-color: #228798;
-    background-image: linear-gradient(141deg, #abd2de 0%, #09818c 51%, #09818c 75%);
+    /* background-image: linear-gradient(141deg, #abd2de 0%, #09818c 51%, #09818c 75%); */
     color:#fff;
     text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.7803921568627451);
 }
