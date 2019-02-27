@@ -210,7 +210,7 @@ section.project-accomplishment h2, section.project-inquiries h2
 }
 section.project-accomplishment ul.project-list{margin: 25px 0; text-align:left;}
 section.project-accomplishment ul.project-list li{line-height: 32px;}
-@media (min-width: 995px)
+@media (max-width: 995px)
 {
     a[name='projects-involved']{text-align: left !important;}
 }
