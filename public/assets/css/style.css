@@ -201,14 +201,14 @@ section.project-accomplishment
 section.project-accomplishment a{text-decoration:none;}
 .carousel-caption{color:#0c616f;vertical-align: top; top:5% !important; bottom:auto;;}
 
-section.project-accomplishment h2, section.project-inquiries h2
+section.project-accomplishment h2
 {
     font-size: 1.6rem;
     line-height: 32px;
     font-weight: 400;
     margin-top: 0;
-    padding-top: 0;
 }
+section.project-inquiries h2{padding-top: 0;}
 section.project-accomplishment h2{padding-top:30px;}
 section.project-accomplishment ul.project-list{margin: 25px 0; text-align:left; }
 section.project-accomplishment ul.project-list li{line-height: 32px;}
