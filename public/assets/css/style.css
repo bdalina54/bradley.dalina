@@ -196,7 +196,7 @@ section.project-services table tbody tr td:first-child{vertical-align: top;}
 
 section.project-accomplishment
 {
-
+    color:#228798;
 }
 section.project-accomplishment a{text-decoration:none;}
 .carousel-caption{color:#000; vertical-align: top;}
@@ -216,6 +216,7 @@ section.project-accomplishment ul.project-list li{line-height: 32px;}
 
 #myCanvas{width:100%;}
 
+section.project-inquiries a{text-decoration:none;}
 
 
 footer{padding:20px 15px; border-top:solid 1px #ddd; font-size:14px;;}
