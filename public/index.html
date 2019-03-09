@@ -362,6 +362,16 @@
               js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
               fjs.parentNode.insertBefore(js, fjs);
             }(document, 'script', 'facebook-jssdk'));
+
+
+            FB.CustomerChat.show(shouldShowDialog: boolean);
+            FB.CustomerChat.showDialog();
+            FB.CustomerChat.update({
+              logged_in_greeting: 'Hello There!',
+              logged_out_greeting: 'Log in to Chat with Us',
+              ref: 'coupon_15',
+            });
+
           </script>
           <div class='fb-customerchat'page_id='393315407889414'></div>
     </body>
