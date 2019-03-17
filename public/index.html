@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="overflow:hidden;">
     <head>
         <title>
             Bradley B. Dalina
@@ -78,6 +78,23 @@
         <!--[if IE]><link rel="shortcut icon" type="image/x-icon" href="assets/images/cropped-bradley_dalina-32x32.jpg" /><![endif]-->
     </head>
     <body>
+        <div id="loader-wrapper">
+    		<div id="loader_text">
+                <div class="img_holder">
+                    <div class="rotating">
+                    </div>
+                    <img class="rounded-circle text-center"  width="150" alt="Bradley B. Dalia" title="Bradley B. Dalia" src="assets/images/cropped-bradley_dalina-210x210.jpg"/>
+                </div>
+                <blockquote class="blockquote text-center col-lg-6 col-md-6">
+                    <p class="mb-3 mt-2">Happiness somehow is a reaction of peace, content, and positive state of mind</p>
+                    <footer class="blockquote-footer" style="border-top:solid 1px rgba(221, 221, 221, 0.34901960784313724);"><cite title="Bradley B. Dalina"> Bradley B. Dalina</cite></footer>
+                </blockquote>
+    		</div>
+    		<div id="loader">
+    		</div>
+    		<div class="loader-section section-left"></div>
+    		<div class="loader-section section-right"></div>
+    	</div>
         <nav class="navbar nav-inverse bg-white">
             <div class="container">
                 <a class="web_title float-left" role="button" href="https://wwww.bradley-dalina.tk/"></a>
@@ -339,56 +356,48 @@
                </div>
           </div>
       </footer>
-      <script rel="nofollow" type="text/javascript" language="javascript">
+        <script rel="nofollow" type="text/javascript" language="javascript">
           $(document).ready(function()
           {
               $('.web_number_icon').tooltip({ boundary: 'window' });
               $('.web_email_icon').tooltip({ boundary: 'window' });
               $('.project-carousel').carousel({interval: 10000});
           });
-      </script>
-      <script rel="nofollow" type="text/javascript" language="javascript">
-              // if(window.XMLHttpRequest)
-              //    {
-              //    xmlhttp = new XMLHttpRequest();
-              //   }
-              //   else
-              //   {
-              //    xmlhttp = new ActiveXObject('Microsoft.XMLHTTP');
-              //   };
+        </script>
+        <script rel="nofollow" type="text/javascript" language="javascript">
+                (function (w,d)
+                {
+                    'use_strict';
+                    function toElem(el)
+                    {
+                      return d.querySelector(el);
+                    }
 
-             /*xmlhttp.onreadystatechange = function(){
-                 if(xmlhttp.readyState == 4 && xmlhttp.status == 200){
-                     document.getElementById('message').innerHTML = xmlhttp.responseText;
-                 };
-             };
+                    w.onload = function()
+                    {
+                        setTimeout(function(){toElem('body').className+=' loaded'; toElem('html').removeAttribute('style'); }, 3000);
+                    }
+                })(window, document);
+        </script>
+        <!-- Load Facebook SDK for JavaScript -->
+        <!-- Load Facebook SDK for JavaScript -->
+        <div id="fb-root"></div>
+        <script type="text/javascript" language="javascript">
+                window.fbAsyncInit = function() {
+                  FB.init({
+                    xfbml            : true,
+                    version          : 'v3.2'
+                  });
+                };
 
-             parameters = 'insert_text='+document.getElementById('insert_text').value;*/
-
-             // xmlhttp.open('GET','/',true);
-             // xmlhttp.setRequestHeader("X-Frame-Options", "SAMEORIGIN");
-             // xmlhttp.setRequestHeader("X-XSS-Protection", "1; mode=block");
-             // xmlhttp.send();
-      </script>
-      <!-- Load Facebook SDK for JavaScript -->
-      <!-- Load Facebook SDK for JavaScript -->
-<div id="fb-root"></div>
-<script>
-        window.fbAsyncInit = function() {
-          FB.init({
-            xfbml            : true,
-            version          : 'v3.2'
-          });
-        };
-
-        (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-</script>
+                (function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+                fjs.parentNode.insertBefore(js, fjs);
+                }(document, 'script', 'facebook-jssdk'));
+        </script>
 
         <!-- Your customer chat code -->
         <div class="fb-customerchat"
