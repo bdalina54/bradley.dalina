@@ -5,16 +5,21 @@
             Bradley B. Dalina
         </title>
 
-        <link rel="preload" href="assets/css/bootstrap.min.css" as="style" type="text/css" onload="var script = document.createElement('link');
-        link.href = this.href;document.body.appendChild(link);" onerror="this.rel='stylesheet'" async media="all">
+        <!--[if IE]><link id="css_bootstrap" rel="stylesheet" href="assets/css/bootstrap.min.css" as="style" type="text/css" defer media="all"><![endif]-->
+        <link id="css_bootstrap" rel="preload" href="assets/css/bootstrap.min.css" as="style" type="text/css" onload="this.rel='stylesheet'" onerror="this.rel='stylesheet'" async media="all">
 		<noscript><link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css" async media="all"></noscript>
 
-        <link rel="preload" href="assets/css/font-awesome.min.css" as="style" type="text/css" onload="this.rel='stylesheet'" onerror="this.rel='stylesheet'" defer media="all">
+        <!--[if IE]><link id="css_bootstrap" rel="stylesheet" href="assets/css/font-awesome.min.css" as="style" type="text/css" defer media="all"><![endif]-->
+        <link id="css_fontawesome" rel="preload" href="assets/css/font-awesome.min.css" as="style" type="text/css" onload="this.rel='stylesheet'" onerror="this.rel='stylesheet'" defer media="all">
 		<noscript><link rel="stylesheet" href="assets/css/font-awesome.min.css" type="text/css" defer media="all"></noscript>
 
-        <link rel="preload" href="assets/css/style.css" as="style" type="text/css" onload="this.rel='stylesheet'" onerror="this.rel='stylesheet'" media="all">
+        <!--[if IE]><link id="css_bootstrap" rel="stylesheet" href="assets/css/style.css" as="style" type="text/css" defer media="all"><![endif]-->
+        <link id="css_styles" rel="preload" href="assets/css/style.css" as="style" type="text/css" onload="this.rel='stylesheet'" onerror="this.rel='stylesheet'" media="all">
 		<noscript><link rel="stylesheet" href="assets/css/style.css" type="text/css" media="all"></noscript>
 
+        <style type="text/css">
+            #loader-wrapper{position:fixed;top:0;left:0;width:100%;height:100%;z-index:1000}#loader_text{z-index:1001;position:relative;top:30%;left:0;right:0;margin:auto;text-align:center;color:#fff}#loader_text blockquote{margin:auto}@-webkit-keyframes rotate{from{-webkit-transform:rotate(0)}to{-webkit-transform:rotate(360deg)}}@-moz-keyframes rotate{from{-moz-transform:rotate(0)}to{-moz-transform:rotate(360deg)}}#loader_text img{z-index:99;margin-bottom:10px;padding:5px;background-color:#fff;box-shadow:0 0 5px rgba(0,0,0,.6)}#loader_text .img_holder{position:relative}#loader_text .rotating{z-index:-1;border-left:solid 3px #000;border-top:solid 3px #fff;border-right:solid 3px #000;border-bottom:solid 3px #fff;position:absolute;display:block;width:160px;height:160px;top:-10px;bottom:0;left:0;right:0;margin:auto;padding:10px;border-radius:50%;-webkit-animation-name:rotate;-webkit-animation-duration:1.5s;-webkit-animation-iteration-count:infinite;-webkit-animation-timing-function:linear;-moz-animation-name:rotate;-moz-animation-duration:1.5s;-moz-animation-iteration-count:infinite;-moz-animation-timing-function:linear}#loader_text h3{margin-bottom:10px;padding:0;font-weight:400}#loader_text p{color:#ddd;font-size:1.1rem}#loader{display:block;position:relative;left:50%;top:35%;width:40px;height:40px;margin:-20px 0 0 -20px;border-radius:50%;z-index:1001;background-image:url(assets/images/perload.gif);background-repeat:no-repeat;background-position:center}#loader-wrapper .loader-section{background-color:#062225;position:fixed;top:0;width:51%;height:100%;z-index:1000;-webkit-transform:translateX(0);-ms-transform:translateX(0);transform:translateX(0)}#loader-wrapper .loader-section.section-left{left:0}#loader-wrapper .loader-section.section-right{right:0}
+        </style>
         <script rel="nofollow" type="text/javascript" language="javascript" src="assets/js/jquery-3.3.1.min.js"></script>
         <script rel="nofollow" type="text/javascript" language="javascript" src="assets/js/popper.min.js"></script>
         <script rel="nofollow" type="text/javascript" language="javascript" src="assets/js/bootstrap.min.js"></script>
@@ -73,9 +78,9 @@
                 <div class="img_holder">
                     <div class="rotating">
                     </div>
-                    <img class="rounded-circle text-center"  width="150" alt="Bradley B. Dalia" title="Bradley B. Dalia" src="assets/images/cropped-bradley_dalina-210x210.jpg"/>
+                    <img style="border-radius:50%; width:150px;" class="rounded-circle text-center" alt="Bradley B. Dalia" title="Bradley B. Dalia" src="assets/images/bradley_dalina-150x150.jpg"/>
                 </div>
-                <blockquote class="blockquote text-center col-lg-6 col-md-6">
+                <blockquote class="blockquote text-center" style="display:block; max-width:610px;">
                     <p class="mb-3 mt-2">Happiness somehow is a reaction of peace, content, and positive state of mind</p>
                     <footer class="blockquote-footer" style="border-top:solid 1px rgba(221, 221, 221, 0.34901960784313724);"><cite title="Bradley B. Dalina"> Bradley B. Dalina</cite></footer>
                 </blockquote>
@@ -357,16 +362,43 @@
         <script rel="nofollow" type="text/javascript" language="javascript">
                 (function (w,d)
                 {
-                    'use_strict';
+                    //'use_strict';
+                    function toID(el)
+                    {
+                      return d.getElementById(el);
+                    }
                     function toElem(el)
                     {
                       return d.querySelector(el);
                     }
 
-                    w.onload = function()
+                    function init()
                     {
-                        setTimeout(function(){toElem('body').className+=' loaded'; toElem('html').removeAttribute('style'); }, 3000);
+                      // quit if this function has already been called
+                      if (arguments.callee.done) return;
+
+                      // flag this function so we don't do the same thing twice
+                      arguments.callee.done = true;
+
+                      // do stuff
+                      toID('css_bootstrap').setAttribute('rel', 'stylesheet');
+                      toID('css_fontawesome').setAttribute('rel', 'stylesheet');
+                      toID('css_styles').setAttribute('rel', 'stylesheet');
+                      setTimeout(function(){toElem('body').className+=' loaded'; toElem('html').removeAttribute('style'); }, 3000);
+
+                    };
+                    w.onload = init;
+                    if (document.addEventListener)
+                    {
+                      document.addEventListener("DOMContentLoaded", init, false);
                     }
+
+                    /*@cc_on @*/
+                    /*@if (@_win32)
+                      document.write('<link id="css_bootstrap" rel="stylesheet" href="assets/css/bootstrap.min.css" as="style" type="text/css" defer media="all">');
+                      document.write('<link id="css_bootstrap" rel="stylesheet" href="assets/css/font-awesome.min.css" as="style" type="text/css" defer media="all">');
+                      document.write('<link id="css_bootstrap" rel="stylesheet" href="assets/css/style.css" as="style" type="text/css" defer media="all">');
+                    /*@end @*/
                 })(window, document);
         </script>
         <!-- Load Facebook SDK for JavaScript -->
