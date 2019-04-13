@@ -14,8 +14,7 @@
 		<noscript><link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css" async media="all"></noscript>
 
         <!--[if IE]><link id="css_bootstrap" rel="stylesheet" href="assets/css/font-awesome.min.css" as="style" type="text/css" defer media="all"><![endif]-->
-        <link id="css_fontawesome" rel="preload" href="assets/css/font-awesome.min.css" as="style" type="text/css" onload="this.rel='stylesheet'" onerror="this.rel='stylesheet'" defer media="all">
-		<noscript><link rel="stylesheet" href="assets/css/font-awesome.min.css" type="text/css" defer media="all"></noscript>
+        <noscript><link rel="stylesheet" href="assets/css/font-awesome.min.css" type="text/css" defer media="all"></noscript>
 
         <!--[if IE]><link id="css_bootstrap" rel="stylesheet" href="assets/css/style.css" as="style" type="text/css" defer media="all"><![endif]-->
         <link id="css_styles" rel="preload" href="assets/css/style.css" as="style" type="text/css" onload="this.rel='stylesheet'" onerror="this.rel='stylesheet'" media="all">
@@ -410,12 +409,23 @@
 
                       // do stuff
                       toID('css_bootstrap').setAttribute('rel', 'stylesheet');
-                      toID('css_fontawesome').setAttribute('rel', 'stylesheet');
+                      //toID('css_fontawesome').setAttribute('rel', 'stylesheet');
                       toID('css_styles').setAttribute('rel', 'stylesheet');
                       setTimeout(function(){toElem('body').className+=' loaded'; toElem('html').removeAttribute('style'); }, 3000);
 
+                      var header = toElem("head");
                       var footer = toElem("footer#footer");
                       var fb_root = toElem("#fb-root");
+
+                      var fontawesome= document.createElement('link');
+                      fontawesome.setAttribute("id", "css_fontawesome");
+                      fontawesome.href="assets/css/font-awesome.min.css";
+                      fontawesome.setAttribute("rel", "stylesheet");
+                      fontawesome.type="text/css";
+                      fontawesome.setAttribute("media", "all");
+                      header.appendChild(fontawesome);
+                      //<link id="css_fontawesome" rel="preload" href="assets/css/font-awesome.min.css" as="style" type="text/css" onload="this.rel='stylesheet'" onerror="this.rel='stylesheet'" defer media="all">
+
 
                       var jqscript = document.createElement('script');
                       var pscript = document.createElement('script');
