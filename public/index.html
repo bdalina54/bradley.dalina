@@ -415,14 +415,22 @@
                       setTimeout(function(){toElem('body').className+=' loaded'; toElem('html').removeAttribute('style'); }, 3000);
 
                       var footer = toElem("footer#footer");
-                      var fb_root = toElem("fb-root");
+                      var fb_root = toElem("#fb-root");
 
                       var jqscript = document.createElement('script');
+                      var pscript = document.createElement('script');
                       var bscript = document.createElement('script');
                       var myscript = document.createElement('script');
                       var fbscript = document.createElement('script');
                       jqscript.onload = function()
                        {
+
+                            pscript.src = "assets/js/popper.min.js";
+                            pscript.setAttribute("language","javascript");
+                            pscript.type = "text/javascript";
+                            pscript.setAttribute("rel","nofollow");
+                            footer.appendChild(pscript);
+
                             bscript.src = "assets/js/bootstrap.min.js";
                             bscript.setAttribute("language","javascript");
                             bscript.type = "text/javascript";
