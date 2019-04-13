@@ -371,7 +371,7 @@
   </section>
 
 
-      <footer title="Bradley-B-Dalina">
+      <footer id="footer" title="Bradley-B-Dalina">
           <div class="container">
               <div class="row">
                     <div class="col-md-6">
@@ -414,13 +414,24 @@
                       toID('css_styles').setAttribute('rel', 'stylesheet');
                       setTimeout(function(){toElem('body').className+=' loaded'; toElem('html').removeAttribute('style'); }, 3000);
 
-                      var footer = toElem("footer");
+                      var footer = toElem("footer#footer");
 
                       var jqscript = document.createElement('script');
                       var myscript = document.createElement('script');
                       jqscript.onload = function()
                        {
                           //alert("Script loaded and ready");
+                          myscript.language = "javascript";
+                          myscript.type = "text/javascript";
+                          myscript.rel="nofollow";
+                          myscript.innerHTML = ""+
+                          "$(document).ready(function()"+
+                          "{"+
+                          "     $('.web_number_icon').tooltip({ boundary: 'window' });"+
+                          "     $('.web_email_icon').tooltip({ boundary: 'window' });"+
+                          "     $('.project-carousel').carousel({interval: 10000});"+
+                          " });";
+                          footer.appendChild(myscript);
 
                        };
                        jqscript.src = "assets/js/jquery-3.3.1.min.js";
@@ -428,21 +439,6 @@
                        jqscript.type = "text/javascript";
                        jqscript.rel="nofollow";
                        footer.appendChild(jqscript);
-
-                       // myscript.language = "javascript";
-                       // myscript.type = "text/javascript";
-                       // myscript.rel="nofollow";
-                       // myscript.innerHTML = ""+
-                       // "$(document).ready(function()"+
-                       // "{"+
-                       // "     $('.web_number_icon').tooltip({ boundary: 'window' });"+
-                       // "     $('.web_email_icon').tooltip({ boundary: 'window' });"+
-                       // "     $('.project-carousel').carousel({interval: 10000});"+
-                       // " });";
-
-                       //footer.appendChild(myscript);
-
-
 
                     };
                     w.onload = init;
