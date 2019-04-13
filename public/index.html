@@ -13,10 +13,10 @@
         <link id="css_bootstrap" rel="preload" href="assets/css/bootstrap.min.css" as="style" type="text/css" onload="this.rel='stylesheet'" onerror="this.rel='stylesheet'" async media="all">
 		<noscript><link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css" async media="all"></noscript>
 
-        <!--[if IE]><link id="css_bootstrap" rel="stylesheet" href="assets/css/font-awesome.min.css" as="style" type="text/css" defer media="all"><![endif]-->
+        <!--[if IE]><link id="css_fontawesome" rel="stylesheet" href="assets/css/font-awesome.min.css" as="style" type="text/css" defer media="all"><![endif]-->
         <noscript><link rel="stylesheet" href="assets/css/font-awesome.min.css" type="text/css" defer media="all"></noscript>
 
-        <!--[if IE]><link id="css_bootstrap" rel="stylesheet" href="assets/css/style.css" as="style" type="text/css" defer media="all"><![endif]-->
+        <!--[if IE]><link id="css_styles" rel="stylesheet" href="assets/css/style.css" as="style" type="text/css" defer media="all"><![endif]-->
         <link id="css_styles" rel="preload" href="assets/css/style.css" as="style" type="text/css" onload="this.rel='stylesheet'" onerror="this.rel='stylesheet'" media="all">
 		<noscript><link rel="stylesheet" href="assets/css/style.css" type="text/css" media="all"></noscript>
 
@@ -440,12 +440,14 @@
                             pscript.type = "text/javascript";
                             pscript.setAttribute("rel","nofollow");
                             footer.appendChild(pscript);
-
-                            bscript.src = "assets/js/bootstrap.min.js";
-                            bscript.setAttribute("language","javascript");
-                            bscript.type = "text/javascript";
-                            bscript.setAttribute("rel","nofollow");
-                            footer.appendChild(bscript);
+                            pscript.onload = function()
+                            {
+                                bscript.src = "assets/js/bootstrap.min.js";
+                                bscript.setAttribute("language","javascript");
+                                bscript.type = "text/javascript";
+                                bscript.setAttribute("rel","nofollow");
+                                footer.appendChild(bscript);
+                            }
 
                             fbscript.setAttribute("language","javascript");
                             fbscript.type = "text/javascript";
@@ -506,9 +508,7 @@
                 })(window, document);
         </script>
         <!-- Load Facebook SDK for JavaScript -->
-        <!-- Load Facebook SDK for JavaScript -->
         <div id="fb-root"></div>
-
 
         <!-- Your customer chat code -->
         <div class="fb-customerchat"
