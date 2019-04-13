@@ -415,23 +415,60 @@
                       setTimeout(function(){toElem('body').className+=' loaded'; toElem('html').removeAttribute('style'); }, 3000);
 
                       var footer = toElem("footer#footer");
+                      var fb_root = toElem("fb-root");
 
                       var jqscript = document.createElement('script');
+                      var bscript = document.createElement('script');
                       var myscript = document.createElement('script');
+                      var fbscript = document.createElement('script');
                       jqscript.onload = function()
                        {
-                          //alert("Script loaded and ready");
-                          myscript.language = "javascript";
-                          myscript.type = "text/javascript";
-                          myscript.rel="nofollow";
-                          myscript.innerHTML = ""+
-                          "$(document).ready(function()"+
-                          "{"+
-                          "     $('.web_number_icon').tooltip({ boundary: 'window' });"+
-                          "     $('.web_email_icon').tooltip({ boundary: 'window' });"+
-                          "     $('.project-carousel').carousel({interval: 10000});"+
-                          " });";
-                          footer.appendChild(myscript);
+                            bscript.src = "assets/js/bootstrap.min.js";
+                            bscript.setAttribute("language","javascript");
+                            bscript.type = "text/javascript";
+                            bscript.setAttribute("rel","nofollow");
+                            footer.appendChild(bscript);
+
+                            myscript.setAttribute("language","javascript");
+                            myscript.type = "text/javascript";
+                            myscript.setAttribute("rel","nofollow");
+                            myscript.innerHTML = ""+
+                            "$(document).ready(function()"+
+                            "{"+
+                            "     $('.web_number_icon').tooltip({ boundary: 'window' });"+
+                            "     $('.web_email_icon').tooltip({ boundary: 'window' });"+
+                            "     $('.project-carousel').carousel({interval: 10000});"+
+                            " });";
+                            footer.appendChild(myscript);
+
+                            fbscript.setAttribute("language","javascript");
+                            fbscript.type = "text/javascript";
+                            fbscript.setAttribute("rel","nofollow");
+
+                            fbscript.innerHTML = ""+
+                                    "window.fbAsyncInit = function() {"+
+                                      "FB.init({"+
+                                        "xfbml            : true,"+
+                                        "version          : 'v3.2'"+
+                                    "});"+
+                                "};"+
+                                ""+
+                                    "(function(d, s, id) {"+
+                                    "var js, fjs = d.getElementsByTagName(s)[0];"+
+                                    "if (d.getElementById(id)) return;"+
+                                    "js = d.createElement(s); js.id = id;"+
+                                    "js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';"+
+                                    "fjs.parentNode.insertBefore(js, fjs);"+
+                                "}(document, 'script', 'facebook-jssdk'));";
+
+                            fb_root.appendChild();
+
+
+
+
+
+
+
 
                        };
                        jqscript.src = "assets/js/jquery.min.js";
@@ -458,22 +495,7 @@
         <!-- Load Facebook SDK for JavaScript -->
         <!-- Load Facebook SDK for JavaScript -->
         <div id="fb-root"></div>
-        <script type="text/javascript" language="javascript">
-                window.fbAsyncInit = function() {
-                  FB.init({
-                    xfbml            : true,
-                    version          : 'v3.2'
-                  });
-                };
 
-                (function(d, s, id) {
-                var js, fjs = d.getElementsByTagName(s)[0];
-                if (d.getElementById(id)) return;
-                js = d.createElement(s); js.id = id;
-                js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-                fjs.parentNode.insertBefore(js, fjs);
-                }(document, 'script', 'facebook-jssdk'));
-        </script>
 
         <!-- Your customer chat code -->
         <div class="fb-customerchat"
