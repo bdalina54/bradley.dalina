@@ -423,6 +423,7 @@
                       fontawesome.setAttribute("rel", "stylesheet");
                       fontawesome.type="text/css";
                       fontawesome.setAttribute("media", "all");
+                      fontawesome.setAttribute("defer", "defer");
                       header.appendChild(fontawesome);
                       //<link id="css_fontawesome" rel="preload" href="assets/css/font-awesome.min.css" as="style" type="text/css" onload="this.rel='stylesheet'" onerror="this.rel='stylesheet'" defer media="all">
 
@@ -439,6 +440,7 @@
                             pscript.setAttribute("language","javascript");
                             pscript.type = "text/javascript";
                             pscript.setAttribute("rel","nofollow");
+                            pscript.setAttribute("defer","defer");
                             footer.appendChild(pscript);
                             pscript.onload = function()
                             {
@@ -446,6 +448,7 @@
                                 bscript.setAttribute("language","javascript");
                                 bscript.type = "text/javascript";
                                 bscript.setAttribute("rel","nofollow");
+                                bscript.setAttribute("defer","defer");
                                 footer.appendChild(bscript);
                             }
 
@@ -469,10 +472,10 @@
                                     "js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';"+
                                     "fjs.parentNode.insertBefore(js, fjs);"+
                                 "}(document, 'script', 'facebook-jssdk'));";
-                            setTimeout(function()
-                            {
+                            //setTimeout(function()
+                            //{
                                 fb_root.appendChild(fbscript);
-                            }, 1000);
+                            //}, 1000);
 
                        }
 
@@ -481,6 +484,7 @@
                             myscript.setAttribute("language","javascript");
                             myscript.type = "text/javascript";
                             myscript.setAttribute("rel","nofollow");
+                            myscript.setAttribute("defer","defer");
                             myscript.innerHTML = ""+
                             "$(document).ready(function()"+
                             "{"+
