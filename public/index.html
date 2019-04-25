@@ -469,8 +469,11 @@
                                     "js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';"+
                                     "fjs.parentNode.insertBefore(js, fjs);"+
                                 "}(document, 'script', 'facebook-jssdk'));";
+                            setTimeout(function()
+                            {
+                                fb_root.appendChild(fbscript);
+                            }, 1000);
 
-                            fb_root.appendChild(fbscript);
                        }
 
                        bscript.onload = function()
