@@ -1,53 +1,43 @@
 <!DOCTYPE html>
-<html lang="en" style="overflow:hidden;">
+<html lang="en" class="no-js" style="overflow:hidden;" ><!-- manifest="demo.appcache"-->
     <head title="Bradley-B-Dalina">
-        <title title="Bradley-B-Dalina">
-            Bradley B. Dalina
-        </title>
-        <script src="assets/js/google-analytics/ga-lite.min.js" async></script>
+        <title title="Bradley-B-Dalina">Bradley B. Dalina</title>
+        <script src="js/google-analytics/ga-lite.min.js" async></script>
 		<script>
-		var galite = galite || {};
-		galite.UA = 'UA-51807488-1'; // Insert your tracking code here
+    		var galite = galite || {};
+    		galite.UA = 'UA-51807488-1'; // Insert your tracking code here
 		</script>
-        <!--[if IE]><link id="css_bootstrap" rel="stylesheet" href="assets/css/bootstrap.min.css" as="style" type="text/css" defer media="all"><![endif]-->
-        <link id="css_bootstrap" rel="preload" href="assets/css/bootstrap.min.css" as="style" type="text/css" onload="this.rel='stylesheet'" onerror="this.rel='stylesheet'" async media="all">
-		<noscript><link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css" async media="all"></noscript>
+        <script src="js/lazysizes.min.js" async></script>
+        <!--[if IE]><link id="css_opensans" rel="stylesheet" href="fonts/open-sans.css" as="style" type="text/css" async onload="this.media='all'"><![endif]-->
+        <link id="css_opensans" href="fonts/open-sans.css" rel="preload" as="style" type="text/css" onerror="this.rel='stylesheet'" async media="nope!" onload="this.media='all'">
 
-        <!--[if IE]><link id="css_fontawesome" rel="stylesheet" href="assets/fonts/font-awesome.min.css" as="style" type="text/css" defer media="all"><![endif]-->
-        <noscript><link rel="stylesheet" href="assets/fonts/font-awesome.min.css" type="text/css" defer media="all"></noscript>
+        <!--[if IE]><link id="css_fontawesome" rel="stylesheet" href="fonts/font-awesome.min.css" as="style" type="text/css" async onload="this.media='all'"><![endif]-->
+        <noscript><link rel="stylesheet" href="fonts/font-awesome.min.css" type="text/css" defer media="all"></noscript>
 
-        <!--[if IE]><link id="css_styles" rel="stylesheet" href="assets/css/style.css" as="style" type="text/css" defer media="all"><![endif]-->
-        <link id="css_styles" rel="preload" href="assets/css/style.css" as="style" type="text/css" onload="this.rel='stylesheet'" onerror="this.rel='stylesheet'" media="all">
-		<noscript><link rel="stylesheet" href="assets/css/style.css" type="text/css" media="all"></noscript>
-
+        <!--[if IE]><link id="css_styles" rel="stylesheet" href="/css/bradley-dalina.css" as="style" type="text/css" onload="this.media='all'" async><![endif]-->
+        <link id="bradley-dalina-css" rel="preload" href="css/bradley-dalina.css" as="style" type="text/css" onload="this.rel='stylesheet'" async onerror="this.rel='stylesheet'" onload="this.media='all'">
+	    <noscript><link rel="stylesheet" href="css/bradley-dalina.css" type="text/css" media="all"></noscript>
         <style type="text/css">
-            #loader-wrapper{position:fixed;top:0;left:0;width:100%;height:100%;z-index:1000}#loader_text{z-index:1001;position:relative;top:30%;left:0;right:0;margin:auto;text-align:center;color:#fff}#loader_text blockquote{margin:auto}@-webkit-keyframes rotate{from{-webkit-transform:rotate(0)}to{-webkit-transform:rotate(360deg)}}@-moz-keyframes rotate{from{-moz-transform:rotate(0)}to{-moz-transform:rotate(360deg)}}#loader_text img{z-index:99;margin-bottom:10px;padding:5px;background-color:#fff;box-shadow:0 0 5px rgba(0,0,0,.6)}#loader_text .img_holder{position:relative}#loader_text .rotating{z-index:-1;border-left:solid 3px #000;border-top:solid 3px #fff;border-right:solid 3px #000;border-bottom:solid 3px #fff;position:absolute;display:block;width:160px;height:160px;top:-10px;bottom:0;left:0;right:0;margin:auto;padding:10px;border-radius:50%;-webkit-animation-name:rotate;-webkit-animation-duration:1.5s;-webkit-animation-iteration-count:infinite;-webkit-animation-timing-function:linear;-moz-animation-name:rotate;-moz-animation-duration:1.5s;-moz-animation-iteration-count:infinite;-moz-animation-timing-function:linear}#loader_text h3{margin-bottom:10px;padding:0;font-weight:400}#loader_text p{color:#ddd;font-size:1.1rem}#loader{display:block;position:relative;left:50%;top:35%;width:40px;height:40px;margin:-20px 0 0 -20px;border-radius:50%;z-index:1001;background-repeat:no-repeat;background-position:center}#loader-wrapper .loader-section{background-color:#062225;position:fixed;top:0;width:51%;height:100%;z-index:1000;-webkit-transform:translateX(0);-ms-transform:translateX(0);transform:translateX(0)}#loader-wrapper .loader-section.section-left{left:0}#loader-wrapper .loader-section.section-right{right:0}
+        #loader-wrapper{position:fixed;top:0;left:0;width:100%;height:100%;z-index:1000;display:flex;align-items:center;justify-content:center}#loader_text{z-index:1001;position:relative;margin:auto;text-align:center;color:#fff}#loader_text .img_holder{position:relative}#loader_text img{z-index:99;margin-bottom:10px;padding:5px;background-color:#fff;box-shadow:0 0 5px rgba(0,0,0,.6)}#loader_text blockquote{margin:auto}@-webkit-keyframes rotate{from{-webkit-transform:rotate(0)}to{-webkit-transform:rotate(360deg)}}@-moz-keyframes rotate{from{-moz-transform:rotate(0)}to{-moz-transform:rotate(360deg)}}#loader-wrapper .loader-section.section-left{left:0}#loader-wrapper .loader-section.section-right{right:0}#loader-wrapper .loader-section{background-color:#2d3242;position:fixed;top:0;width:50%;height:100%;z-index:1000;-webkit-transform:translateX(0);-ms-transform:translateX(0);transform:translateX(0)}#loader_text p{color:#ddd;font-size:36px;text-transform:uppercase;position:relative;margin-top:45px;margin-bottom:15px}#loader_text p::before{content:"";height:5px;width:30px;background-color:#6d84b4;position:absolute;margin:auto;text-align:center;display:block;right:0;left:0;bottom:-2px}#loader_text p::after{content:"";display:block;height:1px;width:0;background-color:#fff;margin:20px auto;border-left:solid 125px #ddd;border-right:solid 125px #ddd}#loader_text blockquote{text-transform:uppercase}#loader_text img{z-index:99;background-color:#fff;box-shadow:0 0 5px rgba(0,0,0,.6);border-radius:50%;width:155px;height:155px;margin:auto;padding:0}#loader_text .img_holder{position:relative;height:160px;width:160px;margin:auto;display:flex;align-items:center;justify-content:center}#loader_text .rotating{z-index:-1;border-left:solid 5px #6d84b4;border-top:solid 5px #fff;border-right:solid 5px #6d84b4;border-bottom:solid 5px #fff;position:absolute;display:block;width:calc(100% + 5px);height:calc(100% + 5px);margin:auto;padding:2.5px;border-radius:50%;-webkit-animation-name:rotate;-webkit-animation-duration:1.5s;-webkit-animation-iteration-count:infinite;-webkit-animation-timing-function:linear;-moz-animation-name:rotate;-moz-animation-duration:1.5s;-moz-animation-iteration-count:infinite;-moz-animation-timing-function:linear}.loaded #loader-wrapper .loader-section{-webkit-transition:all .7s .3s cubic-bezier(.645,.045,.355,1);transition:all .7s .3s cubic-bezier(.645,.045,.355,1);animation:fadeout 7s}.loaded #loader-wrapper .loader-section.section-left{-webkit-transform:translateX(-100%);-ms-transform:translateX(-100%);transform:translateX(-100%)}.loaded #loader-wrapper .loader-section.section-right{-webkit-transform:translateX(100%);-ms-transform:translateX(100%);transform:translateX(100%)}@keyframes fadeout{0%{opacity:1}100%{opacity:0}}.loaded #loader{opacity:0;-webkit-transition:all .3s ease-out;transition:all .3s ease-out}.loaded #loader_text{visibility:hidden}.loaded #loader-wrapper{visibility:hidden;-webkit-transform:translateY(-100%);-ms-transform:translateY(-100%);transform:translateY(-100%);-webkit-transition:all .3s 1s ease-out;transition:all .3s 1s ease-out}
         </style>
-
-        <meta http-equiv="cache-control" content="max-age=0" />
-        <meta http-equiv="cache-control" content="no-cache" />
-        <meta http-equiv="expires" content="0" />
-        <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
-        <meta http-equiv="pragma" content="no-cache" />
-
+        <meta http-equiv="pragma" content="public" />
         <meta charset="UTF-8" content="text/html">
+        <meta name="msvalidate.01" content="59CAA23D8B47E5CAA81FEA704D691071" />
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta http-equiv="Cache-control" content="public, max-age=31536000, must-revalidate, Etag='x234dff'" Etag="x234dff" />
+        <meta http-equiv="Cache-control" content="Cache-Control: public, max-age=31536000, no Etag, no Last-Modified"/><!--content="public, max-age=31536000, must-revalidate"/>-->
+        <meta http-equiv="expires" content="Tue, 3 Nov 2020 1:00:00 GMT" />
+        <meta http-equiv="page-enter" content="revealtrans(duration=3,transition=3)" />
         <meta http-equiv="content-language" content="en">
-        <meta http-equiv="last-modified">
         <meta content="text/html; charset=UTF-8; X-Content-Type-Options=nosniff" http-equiv="Content-Type" />
-        <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' https://connect.facebook.net/en_US/sdk.js https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js; img-src 'self' https://connect.facebook.net/en_US/sdk.js https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js data : 'unsafe-inline'; connect-src 'self' 'unsafe-inline';"> -->
         <meta content="text/html; charset=UTF-8; X-Frame-Options=ALLOW-FROM https://connect.facebook.net/" http-equiv="Content-Type" />
-        <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js ; img-src 'self' https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js"> -->
-        <!-- <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' http://* 'unsafe-inline';  img-src 'self' 'unsafe-inline' 'unsafe-eval' http://*; script-src 'self' http://* 'unsafe-inline' 'unsafe-eval'" /> -->
-        <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; script-src 'self' http://* 'unsafe-inline' 'unsafe-eval'; img-src *;"> -->
+        <meta content="text/html; charset=UTF-8; X-Frame-Options=ALLOW-FROM https://www.facebook.com/" http-equiv="Content-Type" />
         <meta content="text/html; charset=UTF-8; X-XSS-Protection=1;mode=block" http-equiv="Content-Type" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<meta name="keywords" content="Bdalina, html5, css3, professional, animations, web-development, portfolio, web design, service, Bradley-B.-Dalina, Bradley, Dalina, Bradley-Dalina" />
-	<meta name="author" content="Bradley B. Dalina" />
-        <meta name="description" content="Hi! I am an experience full-stack web developer, I work with websites and information and management systems. Skilled in the following programming areas (HTML Language, Javascript (Jquery Library, Datatables, UI, Inputmask), CSS3 (Bootstrap), PHP (Codeigniter Framework, Wordpress Theme) and Mysql Workbench)." />
+      	<meta name="keywords" content="Bdalina, html5, css3, professional, animations, web-development, portfolio, web design, service, Bradley-B.-Dalina, Bradley, Dalina, Bradley-Dalina" />
+      	<meta name="author" content="Bradley B. Dalina" />
+        <meta name="description" content="Hi! I'm a fullstack web developer, I currently work as a wordpress developer @ Surefire Local Ph." />
         <meta name="DC.title" content="Bradley B. Dalina" />
         <meta name="robots" content="index, follow" />
         <meta name="copyright" content="Bradley B. Dalina 2019" />
@@ -57,24 +47,23 @@
         <meta property="og:url" content="https://www.bradley-dalina.tk/"/>
         <meta property="og:site_name" content="Bradley Personal Profile"/>
 		<meta property="og:type" content="Website" />
-        <!-- <meta property="fb:app_id" content="2140835235984368"/> -->
 
-        <meta property="og:description" content="Hi! I am an experience full-stack web developer, I work with websites and information and management systems. Skilled in the following programming areas (HTML Language, Javascript (Jquery Library, Datatables, UI, Inputmask), CSS3 (Bootstrap), PHP (Codeigniter Framework, Wordpress Theme) and Mysql Workbench). "/>
-		<meta property="og:image" content="https://www.bradley-dalina.tk/assets/images/cropped-bradley_dalina-210x210.jpg"/>
+        <meta property="og:description" content="Hi! I'm a fullstack web developer, I currently work as a wordpress developer @ Surefire Local Ph."/>
+        <meta property="og:image" content="https://bdalina54.github.io/images/bradley-dalina.jpg"/>
 
-		<meta name="twitter:title" content="Bradley B. Dalina" />
-        <meta name="twitter:url" content="https://www.bradley-dalina.tk/" />
-        <meta name="twitter:image" content="https://www.bradley-dalina.tk/assets/images/cropped-bradley_dalina-210x210.jpg" />
-        <meta name="twitter:card" content="https://www.bradley-dalina.tk/assets/images/cropped-bradley_dalina-210x210.jpg" />
+        <meta name="twitter:title" content="Bradley B. Dalina" />
+        <meta name="twitter:url" content="https://bdalina54.github.io/" />
+        <meta name="twitter:image" content="https://bdalina54.github.io/images/bradley-dalina.jpg" />
+        <meta name="twitter:card" content="https://bdalina54.github.io/images/bradley-dalina.jpg" />
 
-		<!-- Website Language Targeting -->
-        <link rel="alternate" href="https://www.bradley-dalina.tk/" hreflang="en-us" />
-        <link rel="alternate" href="https://www.bradley-dalina.tk/" hreflang="en-ph" />
-        <link rel="alternate" href="https://www.bradley-dalina.tk/" hreflang="x-default" />
+	     <!-- Website Language Targeting -->
+        <link rel="alternate" href="https://bdalina54.github.io/" hreflang="en-us" />
+        <link rel="alternate" href="https://bdalina54.github.io/" hreflang="en-ph" />
+        <link rel="alternate" href="https://bdalina54.github.io/" hreflang="x-default" />
 
-		<!-- Website Icon -->
-        <link rel="shortcut icon" type="image/x-icon" href="assets/images/cropped-bradley_dalina-32x32.jpg" />
-        <!--[if IE]><link rel="shortcut icon" type="image/x-icon" href="assets/images/cropped-bradley_dalina-32x32.jpg" /><![endif]-->
+	    <!-- Website Icon -->
+        <link rel="shortcut icon" type="image/x-icon" href="images/bradley-dalina-ico.jpg" />
+        <!--[if IE]><link rel="shortcut icon" type="image/x-icon" href="/images/cropped-bradley_dalina-32x32.jpg" /><![endif]-->
         <!-- JSON-LD markup generated by Google Structured Data Markup Helper. -->
         <script type="application/ld+json">
         [ {
@@ -85,445 +74,223 @@
         "@type" : "Person",
         "name" : "Bradley B. Dalina"
         },
-        "datePublished" : "March 01, 2019",
-        "image" : "https://www.bradley-dalina.tk/assets/images/bradley_dalina-150x150.jpg",
+        "datePublished" : "November 01, 2019",
+        "image" : "https://bdalina54.github.io/images/bradley-dalina.jpg",
         "url" : "https://www.bradley-dalina.tk/",
-        "articleBody" : "Hi! I am an experience full-stack web developer, I work with websites and information and management systems.\n        Skilled in the following programming areas (HTML Language, Javascript (Jquery Library, Datatables, UI, Inputmask), CSS3 (Bootstrap), PHP (Codeigniter Framework, Wordpress Theme) and Mysql Workbench)",
-        "articleSection" : "Hi! I am an experience full-stack web developer, I work with websites and information and management systems.\n        Skilled in the following programming areas (HTML Language, Javascript (Jquery Library, Datatables, UI, Inputmask), CSS3 (Bootstrap), PHP (Codeigniter Framework, Wordpress Theme) and Mysql Workbench)",
+        "articleBody" : "Hi! I'm a fullstack web developer, I currently work as a wordpress developer @ Surefire Local Ph.\n",
+        "articleSection" : "Hi! I'm a fullstack web developer, I currently work as a wordpress developer @ Surefire Local Ph.\n",
         "publisher" : {
         "@type" : "Organization",
         "name" : "Copyright © 2019 Bradley B. Dalina",
-        "logo": "https://www.bradley-dalina.tk/assets/images/cropped-bradley_dalina-32x32.jpg"
+        "logo": "https://bdalina54.github.io/images/bradley-dalina.jpg"
         }
         } ]
         </script>
     </head>
-    <body title="Bradley-B-Dalina">
+    <body>
         <div id="loader-wrapper">
-    		<div id="loader_text">
-
-                <div itemscope itemtype="http://schema.org/ImageObject">
-                <div class="img_holder">
-                    <div class="rotating">
+            <div id="loader_text">
+                <div itemscope="" itemtype="http://schema.org/ImageObject">
+                    <div class="img_holder">
+                        <div class="rotating"></div>
+                        <img itemprop="contentURL" style="border-radius:50%;width: 155px;height: 155px;margin: auto;" class="rounded-circle text-center" alt="Bradley B. Dalia" title="Bradley B. Dalia" src="images/bradley-dalina.webp">
                     </div>
-                    <img itemprop="contentURL" style="border-radius:50%; width:150px;" class="rounded-circle text-center" alt="Bradley B. Dalia" title="Bradley B. Dalia" src="assets/images/bradley_dalina-150x150.jpg"/>
+                    <blockquote class="blockquote text-center" style="display:block; max-width:620px;">
+                        <p style="margin-top: 45px;margin-bottom: 15px;">Welcome</p>
+                        <small>BRADLEY B. DALINA</small>
+                    </blockquote>
                 </div>
-                <blockquote class="blockquote text-center" style="display:block; max-width:620px;">
-                    <p class="mb-3 mt-2">Happiness somehow is a reaction of peace, content, and a positive state of mind</p>
-                    <footer class="blockquote-footer" style="border-top:solid 1px rgba(221, 221, 221, 0.34901960784313724);"><cite title="Bradley B. Dalina" itemprop="name" > Bradley B. Dalina</cite></footer>
-                </blockquote>
-                </div>
-    		</div>
-    		<div id="loader">
-    		</div>
-    		<div class="loader-section section-left"></div>
-    		<div class="loader-section section-right"></div>
-    	</div>
-        <nav class="navbar nav-inverse bg-white" title="Bradley-B-Dalina">
-            <div class="container">
-                <a class="web_title float-left" role="button" href="https://www.bradley-dalina.tk/"></a>
-              	<span class="d-none d-md-block float-right">
-                		<a class="web_email pull-right" href="mailto: bdalina54@gmail.com"><i class="fa fa-envelope">&nbsp;&nbsp;</i></a>
-                		<a class="web_number pull-right"><i class="fa fa-phone">&nbsp;</i></a>
-              	</span>
-                <span class="d-md-none float-right">
-                		<a class="web_email_icon pull-right" href="mailto: bdalina54@gmail.com" data-toggle="tooltip" data-placement="bottom" title="Send email"><i class="fa fa-envelope"></i></a>
-                		<a class="web_number_icon pull-right" data-toggle="tooltip" data-placement="bottom" title="+639264482952"><i class="fa fa-phone"></i></a>
+            </div>
+            <div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+        </div>
+        <nav id="navbar">
+            <div class="container flex flex-between h60 v30">
+                <a class="site-title" title="Bradley B. Dalina" role="button" href="https://bdalina54.github.io/"></a>
+              	<span class="site-contact">
+            		<a class="site-email" href=""><i class="fa fa-envelope">&nbsp;&nbsp;</i></a>
+            		<a class="site-number" href=""><i class="fa fa-phone">&nbsp;</i></a>
               	</span>
             </div>
         </nav>
-        <header>
-        	<div class="trans-layer">
-        		<div class="container">
-        				<div class="profile-callout clearfix">
-        					<div class="profile-callout-image col-lg-3 float-left d-none d-lg-block">
-        						<ul class="grid text-center">
-        						<li class="text-center">
-        						<a href="assets/images/cropped-bradley_dalina-210x210.jpg" class="single_image text-center">
-        							<figure class="text-center">
-                                        <!-- <div itemscope itemtype="http://schema.org/ImageObject"> -->
-        								<img itemprop="contentURL" src="assets/images/cropped-bradley_dalina-210x210.jpg" alt="Bradley B. Dalina" title="Bradley-B-Dalina" class="rounded-circle text-center">
-        								<figcaption>
-        									<div class="caption-content">
-        										<i class="fa fa-search"></i><br>
+        <header id="header" class="even after-line">
+        	<div class="transparent flex min450">
+        		<div class="container vh96 flex">
+    				<div class="profile flex">
+    					<div class="photo">
+    						<a class="view-image" data-href="full-size" title="Bradley B. Dalina">
+    							<figure>
+                                    <picture>
+                                          <source srcset="images/bradley-dalina.webp" type="image/webp">
+                                          <source srcset="images/bradley-dalina.jpg" type="image/jpeg">
+                                          <img alt="Bradley B. Dalina" title="Bradley B. Dalina" itemprop="contentURL" alt="This is my face" src="images/bradley-dalina.jpg">
+                                    </picture>
+    								<figcaption class="flex flex-center">
+    									<div class="caption-content">
+        									<i class="fa fa-search"></i><br>
         									<p>View larger</p>
-        								</div>
-        								</figcaption>
-        							</figure>
-        						</a>
-        						</li>
-        					</ul>
-
-        					</div>
-        					<div class="profile-callout-text col-md-12 col-lg-9 float-left">
-        						<div class="flex-center container-fluid center-img d-lg-none">
-        							<ul class="grid">
-        								<li class="text-center float-none">
-        								<a href="assets/images/cropped-bradley_dalina-210x210.jpg" class="text-center">
-        									<figure class="sm-text-center">
-                                                <!-- <div itemscope itemtype="http://schema.org/ImageObject"> -->
-        										<img itemprop="contentURL" src="assets/images/cropped-bradley_dalina-210x210.jpg" alt="Bradley B. Dalina" title="Bradley-B-Dalina" class="rounded-circle text-center">
-        										<figcaption>
-        											<div class="caption-content">
-        												<i class="fa fa-search"></i><br>
-        											<p>View larger</p>
-        										</div>
-        										</figcaption>
-        									</figure>
-        								</a>
-        								</li>
-        							</ul>
-        						</div>
-                                <h1 class="display-4 text-lg-left text-center d-block d-lg-inline-block" title="Bradley-B-Dalina"  itemprop="name">Bradley B. Dalina</h1>
-        						<br/>
-        						<p class="lead text-lg-left text-center">Hi! I am an experience full-stack web developer, I work with websites and information and management systems.
-        Skilled in the following programming areas (HTML Language, Javascript (Jquery Library, Datatables, UI, Inputmask), CSS3 (Bootstrap), PHP (Codeigniter Framework, Wordpress Theme) and Mysql Workbench).</p>
-        					</div>
-        				</div>
-        				<div class="clearfix"></div>
-        			</div>
+    								    </div>
+    								</figcaption>
+    							</figure>
+    						</a>
+    					</div>
+                        <div class="intro">
+                            <h1 title="Bradley B. Dalina"  itemprop="name">Bradley B. Dalina</h1>
+    						<p>Hi! I'm a fullstack web developer, I currently work as a wordpress developer @ Surefire Local Ph.<br/>Please send me a message so we can discuss your project!</p>
+					   </div>
+    				<div class="clearfix"></div>
         		</div>
-        	</header>
-        	<div class="clearfix"></div>
-      <section class="project-services" title="Bradley-B-Dalina, Project, Services">
-          <div class="container">
-                  <div class="row">
-                        <div class="col-lg-4 fadeInDown flex-mid">
-                        	<table>
-                        		<tbody>
-                                      <tr>
-                                			<td>
-                                				<div class="feature-icon"><a href="#web-design"><i class="fa fa-html5"></i></a></div>
-                                			</td>
-                                			<td>
-                                    			<div class="feature-content">
-                                    				<a href="#web-design"><h2 class="nomargin" title="Bradley-B-Dalina,Website Design">Web Design</h2></a>
-                                    				<p class="no-margin">Need a website? Try my professional and mobile responsive design <!--made of html5, css3 bootstrap and jquery.--> </p>
-                                    			</div>
-                                			</td>
-                        		      </tr>
-                    	       </tbody></table>
-                        	<div></div>
-                        </div>
-                        <div class="col-lg-4 fadeInDown flex-mid">
-                        	<table>
-                        		<tbody>
-                                      <tr>
-                                			<td>
-                                				<div class="feature-icon"><a href="#web-design"><i class="fa fa-gears"></i></a></div>
-                                			</td>
-                                			<td>
-                                    			<div class="feature-content">
-                                    				<a href="#web-design"><h2 class="nomargin" title="Bradley-B-Dalina, Information System">Information System</h2></a>
-                                    				<p class="no-margin">I can help you make your task fast and more efficient, using a web-based system</p>
-                                    			</div>
-                                			</td>
-                        		      </tr>
-                    	       </tbody></table>
-                        	<div></div>
-                        </div>
-                        <div class="col-lg-4 fadeInDown flex-mid">
-                        	<table>
-                        		<tbody>
-                                      <tr>
-                                			<td>
-                                				<div class="feature-icon"><a href="#web-design"><i class="fa fa-user"></i></a></div>
-                                			</td>
-                                			<td>
-                                    			<div class="feature-content">
-                                    				<a href="#web-design"><h2 class="nomargin" title="Bradley-B-Dalina, Freelance">Freelance</h2></a>
-                                    				<p class="no-margin">Do you need someone to work with a large project? I can be your programming buddy! </p>
-                                    			</div>
-                                			</td>
-                        		      </tr>
-                    	       </tbody></table>
-                        	<div></div>
-                        </div>
+        	</div>
+    	</header>
+        <section id="skills" class="odd angle-after angle-before">
+            <div class="transparent min450 flex">
+        		<div class="container vh96">
+                    <h2>Skills & Interests</h2>
+                    <ul class="tm30">
+                        <li>HTML5, CSS3 (Transitions, Animations, Keyframes and Transforms), Bootstrap, Responsive Design, Flex, Grid</li>
+                        <li>SEO (Google Analytics, Google Search Console, Google Speed Test)</li>
+                        <li>Image Compression/Optimization for Website use</li>
+                        <li>Vanilla Javascript, Jquery, Ajax, JSON, APIs, DataTables, InputMask, UI.js, Modernizer.js</li>
+                        <li>PHP Core(OOP, MVC, Codeigniter Framework HMVC, Wordpress Theme & Plugin, and past experience with Joomla)</li>
+                        <li>MySqli, PDO</li>
+                        <li>Knowledgeable in Cpanel, .htaccess, php.ini and Cloudfare</li>
+                        <li>Knowledgeable in Photo Enhancement/Editing using Adobe Photoshop</li>
+                    </ul>
                 </div>
-          </div>
-      </section>
-      <section class="project-accomplishment" title="Bradley-B-Dalina, Project, Accomplishments">
-          <div class="container">
-
-          <div class="text-center">
-                <a href="#" name="projects-involved"><h2 title="Bradley-B-Dalina, Project, Accomplishments"><i class="fa fa-folder-open"></i>  Projects Accomplishments</h2></a>
-
-                <ul class="project-list d-lg-none">
-                        <li>University Document Management Information System</li>
-                        <li>Community Based Monitoring System</li>
-                        <li>Development Lead in an Accounting System Module</li>
-                        <li>Record of Barangay Inhabitants System (RBI)</li>
-                        <li>Government Agency Wordpress Website</li>
-                  </ul>
-                <!-- <br class="d-none d-md-block"/> -->
-                <div class="clearfix"></div>
-
-              <div class="project-carousel d-none d-lg-block">
-                  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-                        <ol class="carousel-indicators">
-                              <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-                              <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-                              <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-                              <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
-                              <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
-                        </ol>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <canvas id="myCanvas" width="1000" height="140">
-                                    Your browser does not support the HTML5 canvas tag.
-                                </canvas>
-                                <div class="clearfix"></div>
-                                <div class="carousel-caption d-none d-md-block">
-                                      <h5 title="Bradley-B-Dalina, Government Agency Website">Government Agency Website</h5>
-                                      <p>Wordpress Installation, Content Migration,Plugin Installation and Template Customization <br/>Including Google Website Indexing, Bing Indexing, Analytics and Google Search Console</p>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <canvas id="myCanvas" width="1000" height="140">
-                                    Your browser does not support the HTML5 canvas tag.
-                                </canvas>
-                                <div class="clearfix"></div>
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5 title="Bradley-B-Dalina, Document Management Information System">Document Management Information System</h5>
-                                    <p>Fullstack System Development<br/> (Built with Codeigniter Framework, Mobile Responsize Design)</p>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <canvas id="myCanvas" width="1000" height="140">
-                                    Your browser does not support the HTML5 canvas tag.
-                                </canvas>
-                                <div class="clearfix"></div>
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5 title="Bradley-B-Dalina, Accounting System Module">Accounting System Module</h5>
-                                    <p>Development Lead<br/>(With data migration, includes creating customize check plotting template)</p>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <canvas id="myCanvas" width="1000" height="140">
-                                    Your browser does not support the HTML5 canvas tag.
-                                </canvas>
-                                <div class="clearfix"></div>
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5 title="Bradley-B-Dalina,Record of Barangay Inhabitants System (RBI)">Record of Barangay Inhabitants System (RBI)</h5>
-                                    <p>Fullstack System Development<br/>Generate Reports, Search and Filter Records</p>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <canvas id="myCanvas" width="1000" height="140">
-                                    Your browser does not support the HTML5 canvas tag.
-                                </canvas>
-                                <div class="clearfix"></div>
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5 title="Bradley-B-Dalina, Community Based Monitoring System">Community Based Monitoring System</h5>
-                                    <p>Main System (Server)<br/>(Creating Custom Survey Form Questioner)</p>
-                                </div>
-                            </div>
-                        </div>
-                        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                              <span class="sr-only">Previous</span>
+            </div>
+        </section>
+        <section id="services" class="angle-after angle-before">
+            <div class="transparent flex min450">
+        		<div class="container h60 v60">
+                    <div class="services-wrap">
+                        <a href="#web-designs" title="Website Design" class="services-list flex flex-center">
+                            <div class="feature-icon flex flex-center"><i class="fa fa-html5"></i></div>
+                            <div class="feature-content">
+                				<h3>Web Design</h3>
+                				<p>Lets start your website and make it cool and responsive designs! </p>
+                			</div>
                         </a>
-                        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                              <span class="sr-only">Next</span>
+                        <a href="#information-systems" title="Information System" class="services-list flex flex-center">
+                            <div class="feature-icon flex flex-center"><i class="fa fa-gears"></i></div>
+                            <div class="feature-content">
+                				<h3>Information System</h3>
+                				<p>Make your task fast and more efficient using a web-based system. </p>
+                			</div>
                         </a>
-                  </div>
+                        <a href="#other-services" title="Other Services" class="services-list flex flex-center">
+                            <div class="feature-icon flex flex-center"><i class="fa fa-tasks"></i></div>
+                            <div class="feature-content">
+                				<h3>Other Services</h3>
+                				<p>Lets improve your site to be SEO friendly and enhance the load speed. </p>
+                			</div>
+                        </a>
+                    </div>
                 </div>
-          </div>
-      </div>
-  </section>
-  <section class="project-inquiries" title="Bradley-B-Dalina, Project, Inquiries">
-      <div class="container">
-          <div class="row">
-			<div class="col-lg-6 float-left">
-				<h2 title="Bradley-B-Dalina, Details">For more details</h2>
-                <p>Please don't hesitate to call or text the number provided in the website for immediate response, you can also drop a message thru the website email.
-                <br/>Thank you!</p>
-				<!-- Footer navigation links visible only for large devices-->
-				<div id="footer-links" class="d-none d-md-block">
-
-				</div>
-			</div>
-			<div class="col-lg-6 float-left">
-				<!-- Address and contacts-->
-                <h2 title="Bradley-B-Dalina, Contact, Information">Contact Information</h2>
-				<p>Brgy 05, Roxas St. Maydolong, Eastern Samar, Philippines 6802<br>
-				<font>Email :&nbsp;<a href="mailto:bdalina54@gmail.com"  class="web_email"></a></font><br>
-				<font class="web_number">Mobile :&nbsp;</font></p>
-				<!-- Footer navigation links visible only for small devices-->
-				<div id="footer-links" class="d-md-none">
-
-				</div>
-				<!-- Social media icons-->
-
-				<ol id="social-menu">
-                    <li><a target="_blank" href="https://www.facebook.com/dal.bra"><i class="fa fa-facebook"></i></a></li>
-                    <li><a target="_blank" href="https://www.twitter.com/bradleydalina"><i class="fa fa-twitter"></i></a></li>
-                    <li><a target="_blank" href="https://www.linkedin.com/in/bradley-dalina-7966a1124/"><i class="fa fa-linkedin"></i></a></li>
-                    <li><a target="_blank" href="https://bdalina54.github.io"><i class="fa fa-github"></i></a></li>
-                    <li><a href="#"><i class="fa fa-rss"></i></a></li>
-				</ol>
-			</div>
-			<div class="clearfix"></div>
+            </div>
+        </section>
+        <section id="portfolio">
+            <div class="transparent">
+        		<div class="container vh96">
+                    <h2 class="center-text">Porfolio</h2>
+                    <p class="center-text">Here are some of my works.</p>
+                </div>
+            </div>
+        </section>
+        <section id="social">
+            <div class="transparent">
+        		<div class="container vh96">
+                    <h2 class="center-text">Conect With Me</h2>
+                    <div class="flex flex-center social-links h60">
+                        <a class="flex flex-center" target="_blank" rel="nofollow,noreferrer" title="Facebook" href="https://www.facebook.com/dal.bra"><i class="fa fa-facebook"></i></a>
+                        <a class="flex flex-center" target="_blank" rel="nofollow,noreferrer" title="Twitter" href="https://www.twitter.com/bradleydalina"><i class="fa fa-twitter"></i></a>
+                        <a class="flex flex-center" target="_blank" rel="nofollow,noreferrer" title="LinkedIn" href="https://www.linkedin.com/in/bradley-dalina-7966a1124/"><i class="fa fa-linkedin"></i></a>
+                        <a class="flex flex-center" target="_blank" rel="nofollow,noreferrer" title="Github" href="https://bdalina54.github.io"><i class="fa fa-github"></i></a>
+                        <a class="flex flex-center" href="#"><i class="fa fa-rss"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="working-experience" class="odd">
+            <div class="transparent">
+        		<div class="container vh96">
+                    <h2>Work Experience</h2>
+                    <div class="timeline">
+                        <div class="row">
+                            <h4>Wordpress Developer - Surefire Local</h4>
+                            <small>April 2019 - Present</small>
+                            <ul>
+                                <li>Design Integration - Convert PSD Design to Wordpress Template</li>
+                                <li>Implementation of Website Optimization Instructions</li>
+                                <li>Content and Image Integration</li>
+                                <li>Pre Launch Fixes from Dev QA</li>
+                            </ul>
+                        </div>
+                        <div class="row">
+                            <h4>Senior System Engineer IV - Afield Consulting Inc.</h4>
+                            <small>Sept 2016 - Jul 2018, Jan 2019 - March 2019</small>
+                            <ul>
+                                <li>System Cycle Conceptualization</li>
+                                <li>Design and develop applications based on the clients requirements</li>
+                                <li>Test, deploy and support</li>
+                                <li>Diagnose and address application issues raised by the clients during and after system deployment</li>
+                                <li>Document technical deliverable's during application development such as database design, workflow design and other reports as needed</li>
+                            </ul>
+                        </div>
+                        <div class="row">
+                            <h4>Casual Information Technology Specialist - Local Government Unit of Maydolong</h4>
+                            <small>April 2012 - April 2015</small>
+                            <ul>
+                                <li>Network Administrator</li>
+                                <li>Municipal Website Administrator</li>
+                                <li>Graphic Design for tarpauline banners</li>
+                                <li>Computer Troubleshooting and software installations</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="even after-line">
+            <div class="transparent min450 flex flex-center">
+        		<div class="container vh96">
+                    <h2>Contact Me</h2>
+                    <p>Should you need any of my services for your website? I’d love to help you out with this!
+                        I also offer free advise and consultation regarding website development, you can ask me about web development tools for a better site performance. You can also visit my social media profiles for more informations.</p>
+                        <p>Please feel free to contact me thru my email or messenger chat box. Thank you!</p>
+                    <br/>
+                    <button>Send Message</button>
+                </div>
+            </div>
+        </section>
+        <footer id="footer">
+            <div class="container h60 v30 flex flex-between">
+                <span>Copyright © 2019 <a href="/" title="Bradley B. Dalina">Bradley B. Dalina</a></span><span>Hosted By: <a href="https://github.com">Github</a></span>
+            </div>
+        </footer>
+        <div id="image-viewer">
+            <div class="image-wrapper">
+                <figure>
+                    <picture><source srcset="" type="image/webp"><source srcset="" type="image/jpeg"><img alt="" title="" itemprop="contentURL" src=""></picture>
+                    <figcaption>
+                        <div class="caption-content">
+                            <p>Sample Caption</p><a href="javascript:void(0);" id="close-viewer"><small>[ Close ]</small></a>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
         </div>
-      </div>
-  </section>
-
-
-      <footer id="footer" title="Bradley-B-Dalina">
-          <div class="container">
-              <div class="row">
-                    <div class="col-md-6">
-                        <p class="pull-left" title="Bradley-B-Dalina">Copyright &copy; 2019 <a href="https://bradley-dalina.tk">Bradley B. Dalina</a>, Self Designed Mobile Responsive</p>
-                    </div>
-                    <div class="col-md-6">
-                        <p class="float-md-right" title="Bradley-B-Dalina">Proudly Powered by <a href="https://www.netlify.com/" rel="nofollow">Netlify</a></p>
-                    </div>
-               </div>
-          </div>
-      </footer>
-        <!-- <script rel="nofollow" type="text/javascript" language="javascript" src="assets/js/jquery-3.3.1.min.js"></script> -->
-        <!-- <script rel="nofollow" type="text/javascript" language="javascript" src="assets/js/popper.min.js"></script> -->
-        <!-- <script rel="nofollow" type="text/javascript" language="javascript" src="assets/js/bootstrap.min.js"></script> -->
-
-        <script rel="nofollow" type="text/javascript" language="javascript">
-                (function (w,d)
-                {
-                    //'use_strict';
-                    function toID(el)
-                    {
-                      return d.getElementById(el);
-                    }
-                    function toElem(el)
-                    {
-                      return d.querySelector(el);
-                    }
-
-                    function init()
-                    {
-                      // quit if this function has already been called
-                      if (arguments.callee.done) return;
-
-                      // flag this function so we don't do the same thing twice
-                      arguments.callee.done = true;
-
-                      // do stuff
-                      toID('css_bootstrap').setAttribute('rel', 'stylesheet');
-                      //toID('css_fontawesome').setAttribute('rel', 'stylesheet');
-                      toID('css_styles').setAttribute('rel', 'stylesheet');
-                      setTimeout(function(){toElem('body').className+=' loaded'; toElem('html').removeAttribute('style'); }, 3000);
-
-                      var header = toElem("head");
-                      var footer = toElem("footer#footer");
-                      var fb_root = toElem("#fb-root");
-
-                      var fontawesome= document.createElement('link');
-                      fontawesome.setAttribute("id", "css_fontawesome");
-                      fontawesome.href="assets/fonts/font-awesome.min.css";
-                      fontawesome.setAttribute("rel", "stylesheet");
-                      fontawesome.type="text/css";
-                      fontawesome.setAttribute("media", "all");
-                      fontawesome.setAttribute("defer", "defer");
-                      header.appendChild(fontawesome);
-                      //<link id="css_fontawesome" rel="preload" href="assets/css/font-awesome.min.css" as="style" type="text/css" onload="this.rel='stylesheet'" onerror="this.rel='stylesheet'" defer media="all">
-
-
-                      var jqscript = document.createElement('script');
-                      var pscript = document.createElement('script');
-                      var bscript = document.createElement('script');
-                      var myscript = document.createElement('script');
-                      var fbscript = document.createElement('script');
-                      jqscript.onload = function()
-                       {
-
-                            pscript.src = "assets/js/popper.min.js";
-                            pscript.setAttribute("language","javascript");
-                            pscript.type = "text/javascript";
-                            pscript.setAttribute("rel","nofollow");
-                            pscript.setAttribute("defer","defer");
-                            footer.appendChild(pscript);
-                            pscript.onload = function()
-                            {
-                                bscript.src = "assets/js/bootstrap.min.js";
-                                bscript.setAttribute("language","javascript");
-                                bscript.type = "text/javascript";
-                                bscript.setAttribute("rel","nofollow");
-                                bscript.setAttribute("defer","defer");
-                                footer.appendChild(bscript);
-                            }
-
-                            fbscript.setAttribute("language","javascript");
-                            fbscript.type = "text/javascript";
-                            fbscript.setAttribute("rel","nofollow");
-                            fbscript.setAttribute("defer","defer");
-
-                            fbscript.innerHTML = ""+
-                                    "window.fbAsyncInit = function() {"+
-                                      "FB.init({"+
-                                        "xfbml            : true,"+
-                                        "version          : 'v3.2'"+
-                                    "});"+
-                                "};"+
-                                ""+
-                                    "(function(d, s, id) {"+
-                                    "var js, fjs = d.getElementsByTagName(s)[0];"+
-                                    "if (d.getElementById(id)) return;"+
-                                    "js = d.createElement(s); js.id = id;"+
-                                    "js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';"+
-                                    "fjs.parentNode.insertBefore(js, fjs);"+
-                                "}(document, 'script', 'facebook-jssdk'));";
-                            //setTimeout(function()
-                            //{
-                                fb_root.appendChild(fbscript);
-                            //}, 1000);
-
-                       }
-
-                       bscript.onload = function()
-                       {
-                            myscript.setAttribute("language","javascript");
-                            myscript.type = "text/javascript";
-                            myscript.setAttribute("rel","nofollow");
-                            myscript.setAttribute("defer","defer");
-                            myscript.innerHTML = ""+
-                            "$(document).ready(function()"+
-                            "{"+
-                            "     $('.web_number_icon').tooltip({ boundary: 'window' });"+
-                            "     $('.web_email_icon').tooltip({ boundary: 'window' });"+
-                            "     $('.project-carousel').carousel({interval: 10000});"+
-                            " });";
-                            footer.appendChild(myscript);
-                       };
-                       jqscript.src = "assets/js/jquery.min.js";
-                       jqscript.language = "javascript";
-                       jqscript.type = "text/javascript";
-                       jqscript.rel="nofollow";
-                       footer.appendChild(jqscript);
-
-                    };
-                    w.onload = init;
-                    if (document.addEventListener)
-                    {
-                      document.addEventListener("DOMContentLoaded", init, false);
-                    }
-
-                    /*@cc_on @*/
-                    /*@if (@_win32)
-                      document.write('<link id="css_bootstrap" rel="stylesheet" href="assets/css/bootstrap.min.css" as="style" type="text/css" defer media="all">');
-                      document.write('<link id="css_bootstrap" rel="stylesheet" href="assets/css/font-awesome.min.css" as="style" type="text/css" defer media="all">');
-                      document.write('<link id="css_bootstrap" rel="stylesheet" href="assets/css/style.css" as="style" type="text/css" defer media="all">');
-                    /*@end @*/
-                })(window, document);
-        </script>
         <!-- Load Facebook SDK for JavaScript -->
         <div id="fb-root"></div>
-
         <!-- Your customer chat code -->
         <div class="fb-customerchat"
         attribution=setup_tool
+        theme_color="#0084ff"
         page_id="393315407889414"
         logged_in_greeting="Hi!"
         logged_out_greeting="Hi!">
         </div>
+        <!-- attribution=install_email -->
+        <script src="js/modernizr-custom.js" defer></script>
+        <script rel="nofollow" src="js/bradley-dalina.js" type="text/javascript" defer language="javascript"></script>
     </body>
 </html>
